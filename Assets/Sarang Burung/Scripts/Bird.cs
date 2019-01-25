@@ -6,7 +6,7 @@
 using UnityEngine;
 
 public class Bird : MonoBehaviour {
-    [SerializeField] private int 
+    [SerializeField] private int sa;
 	// Use this for initialization
 	void Start () {
 		
