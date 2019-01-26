@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class SceneManage : MonoBehaviour {
     public GameObject Credit;
+    public GameObject HTP;
     
     public void nextscene(string Gameplay)
     {
@@ -12,17 +13,34 @@ public class SceneManage : MonoBehaviour {
         SceneManager.LoadScene("Gameplay");
         
     }
-    public void OnCredit()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Credit.SetActive(false);
+            HTP.SetActive(false);
         }
     }
-    public void backscene(string Menu)
+    public void How_To_Play()
+    {
+        HTP.SetActive(true);
+    }
+
+    public void OnCredit()
+    {
+        Credit.SetActive(true);
+    }
+   
+    public void Resume()
     {
         Debug.Log("Resume!");
         
+    }
+
+    public void Retry()
+    {
+        Debug.Log("Retry!");
+        SceneManager.LoadScene("Gameplay");
     }
     public void Quit()
     {
