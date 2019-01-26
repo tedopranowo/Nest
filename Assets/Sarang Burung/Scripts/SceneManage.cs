@@ -4,16 +4,30 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class SceneManage : MonoBehaviour {
-    public bool IsChange;
+    public GameObject Panel;
     
-    public void nextscene(string scene)
+    public void nextscene(string Gameplay)
     {
-        SceneManager.LoadScene(scene);
-
-    }
-    void OnClick()
-    {
+        Debug.Log("clicked");
+        SceneManager.LoadScene("Gameplay");
         
     }
+    public void OnCredit()
+    {
+        Debug.Log("Credit");
+        if(Panel != null)
+        {
+            Panel.SetActive(true);
+        }   
+        /*Panel = GameObject.FindWithTag("Credit").GetComponent<string>();
+        if (IsChange != true)
+        {
 
+        }*/
+    }
+    public void Quit()
+    {
+        Debug.Log("Active");
+        Application.Quit();
+    }
 }

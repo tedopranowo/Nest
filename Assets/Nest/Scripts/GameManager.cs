@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
-    [SerializeField] private leftBorder
+    [SerializeField] private int leftBorder;
 	// Use this for initialization
 	void Start () {
 		
