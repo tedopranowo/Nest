@@ -75,7 +75,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 1be7893039830ea49a4c044bfc780ed5, type: 2}
-        m_MethodName: Destroy
+        m_MethodName: DestroyObject
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1167609531725386}
@@ -102,8 +102,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114217261330106582}
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_MethodName: StopEvent
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
