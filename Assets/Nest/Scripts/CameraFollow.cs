@@ -14,6 +14,10 @@ public class CameraFollow : MonoBehaviour {
     /// </summary>
     private void UpdatePosition()
     {
+        //Don't do anything if we don't have target to follow
+        if (m_targetToFollow == null)
+            return;
+
         Vector3 targetPosition = m_targetToFollow.transform.position;
         Vector3 cameraPosition = transform.position;
         cameraPosition.x = targetPosition.x;
