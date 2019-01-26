@@ -17,7 +17,7 @@ public class SceneManage : MonoBehaviour {
         Debug.Log("Credit");
         if(Panel != null)
         {
-            Panel.SetActive(true);
+            //Panel = 
         }   
         /*Panel = GameObject.FindWithTag("Credit").GetComponent<string>();
         if (IsChange != true)
