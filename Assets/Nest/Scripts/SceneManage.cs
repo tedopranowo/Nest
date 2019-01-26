@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class SceneManage : MonoBehaviour {
-    public GameObject Panel;
+    public GameObject Credit;
     
     public void nextscene(string Gameplay)
     {
@@ -14,16 +14,15 @@ public class SceneManage : MonoBehaviour {
     }
     public void OnCredit()
     {
-        Debug.Log("Credit");
-        if(Panel != null)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            //Panel = 
-        }   
-        /*Panel = GameObject.FindWithTag("Credit").GetComponent<string>();
-        if (IsChange != true)
-        {
-
-        }*/
+            Credit.SetActive(false);
+        }
+    }
+    public void backscene(string Menu)
+    {
+        Debug.Log("Resume!");
+        
     }
     public void Quit()
     {
