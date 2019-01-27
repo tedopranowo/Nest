@@ -1195,7 +1195,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSoundOn: 1
   audioSource: {fileID: 1168941754}
-  audioClip: {fileID: 8300000, guid: 8b4136c16144edc44af5f4b97df73bb6, type: 3}
+  audioClip:
+  - {fileID: 8300000, guid: 4a69a5f57c3483d4282592a863078d90, type: 3}
+  - {fileID: 8300000, guid: cafa8fafd5ead39479306cc3aad6a87f, type: 3}
 --- !u!224 &1168941753
 RectTransform:
   m_ObjectHideFlags: 0
