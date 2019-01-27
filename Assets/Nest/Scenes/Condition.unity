@@ -417,7 +417,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -6, y: -46.999977}
+  m_AnchoredPosition: {x: -6, y: -46.99997}
   m_SizeDelta: {x: -444.1, y: 68.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &281390870
@@ -1450,4 +1450,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Credit: {fileID: 0}
-  HTP: {fileID: 0}
+  title: {fileID: 0}
+  tulisan: {fileID: 0}
+  btnPlay: {fileID: 0}
+  btnSoundOn: {fileID: 0}
+  btnSoundOff: {fileID: 0}
+  btnI: {fileID: 0}

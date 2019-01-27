@@ -15,9 +15,18 @@ public class SceneManage : MonoBehaviour {
     }
     public void nextscene(string Gameplay)
     {
-        Debug.Log("clicked");
         SceneManager.LoadScene("Gameplay");
+        Time.timeScale = 1f;
         
+    }
+    public void back()
+    {
+        Credit.SetActive(false);
+        tulisan.SetActive(true);
+        title.SetActive(true);
+        btnPlay.SetActive(true);
+        btnSoundOn.SetActive(true);
+        btnI.SetActive(true);
     }
     void Update()
     {
@@ -47,14 +56,7 @@ public class SceneManage : MonoBehaviour {
 
     public void Resume()
     {
-        Debug.Log("Resume!");
         tulisan.SetActive(true);
-    }
-
-    public void Retry()
-    {
-        Debug.Log("Retry!");
-        SceneManager.LoadScene("Gameplay");
     }
     public void SoundOn()
     {
