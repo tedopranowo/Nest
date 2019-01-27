@@ -119,9 +119,6 @@ public class Bird : MonoBehaviour {
                     m_carriedObject = retrievedObject;
                     m_retrievables.Remove(retrievedObject);
 
-                    //Set the layer of the picked object to 'flying'
-                    m_carriedObject.gameObject.layer = (int)LayerConstant.kFlying;
-
                     //Make the object a child of bird so that it follows
                     m_carriedObject.transform.parent = transform;
 
@@ -139,9 +136,6 @@ public class Bird : MonoBehaviour {
 
                 //Remove the object from child
                 m_carriedObject.transform.parent = null;
-
-                //Reset the layer of the object
-                m_carriedObject.ResetLayer();
 
                 //Remove this 
                 m_carriedObject = null;
