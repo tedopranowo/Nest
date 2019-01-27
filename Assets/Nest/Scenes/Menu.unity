@@ -125,7 +125,6 @@ GameObject:
   - component: {fileID: 31086776}
   - component: {fileID: 31086775}
   - component: {fileID: 31086774}
-  - component: {fileID: 31086773}
   m_Layer: 5
   m_Name: Information
   m_TagString: Untagged
@@ -153,24 +152,6 @@ RectTransform:
   m_AnchoredPosition: {x: 82.899994, y: -105.95999}
   m_SizeDelta: {x: -733.88, y: -549.68}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &31086773
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 31086771}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f719713b5c784e428c5773ccbfb9597, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &31086774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +170,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 3
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1325,7 +1306,6 @@ GameObject:
   - component: {fileID: 1594632780}
   - component: {fileID: 1594632779}
   - component: {fileID: 1594632778}
-  - component: {fileID: 1594632781}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -1371,7 +1351,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 3
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1453,24 +1433,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1594632776}
   m_CullTransparentMesh: 0
---- !u!95 &1594632781
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1594632776}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9f719713b5c784e428c5773ccbfb9597, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1600332600
 GameObject:
   m_ObjectHideFlags: 0
