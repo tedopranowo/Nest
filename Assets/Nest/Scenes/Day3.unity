@@ -250,10 +250,21 @@ MonoBehaviour:
       m_useConstant: 1
       m_constant: {x: 0, y: 0, z: 0}
       m_variable: {fileID: 0}
-    minRadius: 1
+    minRadius: 4
     maxRadius: 9
-    amount: 50
+    amount: 20
   - prefab: {fileID: 1167609531725386, guid: e73c8b13d39fcbf48879a5eb0ab14231, type: 2}
+    delayedStart: 0
+    minSpawnInterval: 10
+    maxSpawnInterval: 15
+    center:
+      m_useConstant: 1
+      m_constant: {x: 0, y: 0, z: 0}
+      m_variable: {fileID: 0}
+    minRadius: 1
+    maxRadius: 2
+    amount: 1
+  - prefab: {fileID: 1257360015033150, guid: a72d68e2055842c43b167c533ad5faf8, type: 2}
     delayedStart: 0
     minSpawnInterval: 999999
     maxSpawnInterval: 999999
@@ -263,7 +274,7 @@ MonoBehaviour:
       m_variable: {fileID: 0}
     minRadius: 1
     maxRadius: 9
-    amount: 50
+    amount: 30
 --- !u!4 &184137146
 Transform:
   m_ObjectHideFlags: 0
@@ -510,7 +521,7 @@ Prefab:
     - target: {fileID: 114923925073320316, guid: 64f01977ba243574887881d345f11aa7,
         type: 2}
       propertyPath: m_onEventTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Day4
+      value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 114623125537737130, guid: 64f01977ba243574887881d345f11aa7,
         type: 2}
@@ -1010,6 +1021,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114562805479562648, guid: c48a26a60edb4114581ec5fda38e352a,
+        type: 2}
+      propertyPath: m_targetScore
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c48a26a60edb4114581ec5fda38e352a, type: 2}
   m_IsPrefabAsset: 0
@@ -1255,10 +1271,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSoundOn: 1
   audioSource: {fileID: 2129084294}
-  audioClip:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  bgm: {fileID: 0}
+  soundClick: {fileID: 0}
 --- !u!4 &2129084296
 Transform:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ public class Bird : MonoBehaviour {
         kInSafeZone = 2,
     }
 
+    [SerializeField] private GameObject m_bubble;
     [SerializeField] private Vector3Variable m_positionVariable;
     [SerializeField] private float m_speed;
     [SerializeField] private float m_rotationSpeed;
@@ -127,10 +128,17 @@ public class Bird : MonoBehaviour {
 
                     //Triggers the callback on the object when retrieved
                     m_carriedObject.OnRetrieved();
+
+                    //Add the object to the bubble
+                    m_bubble.SetActive(true);
+                    m_bubble.GetComponent<SpriteRenderer>().sprite = m_carriedObject.GetComponent<SpriteRenderer>().sprite;
                 }
             }
             else
             {
+                //Remove the bubble
+                m_bubble.SetActive(false);
+
                 //Triggers the callback on the object when un-retrieved
                 m_carriedObject.OnUnretrieved();
 

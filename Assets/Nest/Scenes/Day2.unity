@@ -328,10 +328,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSoundOn: 1
   audioSource: {fileID: 57880950}
-  audioClip:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  bgm: {fileID: 0}
+  soundClick: {fileID: 0}
 --- !u!4 &57880952
 Transform:
   m_ObjectHideFlags: 0
@@ -830,6 +828,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114562805479562648, guid: c48a26a60edb4114581ec5fda38e352a,
+        type: 2}
+      propertyPath: m_targetScore
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c48a26a60edb4114581ec5fda38e352a, type: 2}
   m_IsPrefabAsset: 0
@@ -1228,8 +1231,8 @@ MonoBehaviour:
   m_spawnData:
   - prefab: {fileID: 1118867930149852, guid: 962a59bf049d56f42be274677a2d0859, type: 2}
     delayedStart: 0
-    minSpawnInterval: 5
-    maxSpawnInterval: 15
+    minSpawnInterval: 30
+    maxSpawnInterval: 45
     center:
       m_useConstant: 1
       m_constant: {x: 0, y: 0, z: 0}
@@ -1245,10 +1248,21 @@ MonoBehaviour:
       m_useConstant: 1
       m_constant: {x: 0, y: 0, z: 0}
       m_variable: {fileID: 0}
-    minRadius: 1
+    minRadius: 2
     maxRadius: 9
-    amount: 50
+    amount: 40
   - prefab: {fileID: 1167609531725386, guid: e73c8b13d39fcbf48879a5eb0ab14231, type: 2}
+    delayedStart: 0
+    minSpawnInterval: 10
+    maxSpawnInterval: 15
+    center:
+      m_useConstant: 0
+      m_constant: {x: 0, y: 0, z: 0}
+      m_variable: {fileID: 11400000, guid: 81b6c5a52e7f4f041a5e3ee9c6e16787, type: 2}
+    minRadius: 1
+    maxRadius: 2
+    amount: 1
+  - prefab: {fileID: 1257360015033150, guid: a72d68e2055842c43b167c533ad5faf8, type: 2}
     delayedStart: 0
     minSpawnInterval: 999999
     maxSpawnInterval: 999999
@@ -1258,7 +1272,7 @@ MonoBehaviour:
       m_variable: {fileID: 0}
     minRadius: 1
     maxRadius: 9
-    amount: 50
+    amount: 30
 --- !u!4 &1688727227
 Transform:
   m_ObjectHideFlags: 0
