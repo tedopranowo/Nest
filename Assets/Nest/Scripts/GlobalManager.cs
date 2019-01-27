@@ -6,7 +6,7 @@ public class GlobalManager : MonoBehaviour {
     public static GlobalManager instance = null;
     public bool isSoundOn=true;
     public AudioSource audioSource;
-    public AudioClip audioClip;
+    public AudioClip[]  audioClip;
     // Use this for initialization
     void Awake () {
         if (instance == null)
@@ -17,7 +17,7 @@ public class GlobalManager : MonoBehaviour {
     }
     void Start()
     {
-        audioSource.clip = audioClip;
+        audioSource.clip = audioClip[0];
         audioSource.Play();
     }
 

@@ -7,6 +7,7 @@ public class SceneManage : MonoBehaviour {
     public GameObject Credit;
     public GameObject title;
     public GameObject tulisan;
+    public GameObject Tutorial;
     public GameObject btnPlay, btnSoundOn, btnSoundOff, btnI;
     
     public void Backscene(string back)
@@ -43,6 +44,7 @@ public class SceneManage : MonoBehaviour {
    
     public void OnCredit()
     {
+        
         Credit.SetActive(true);
         tulisan.SetActive(false);
         title.SetActive(false);
@@ -50,7 +52,7 @@ public class SceneManage : MonoBehaviour {
         btnSoundOn.SetActive(false);
         btnSoundOff.SetActive(false);
         btnI.SetActive(false);
-
+        GlobalManager.instance.audioSource.volume = 1;
     }
 
     public void Resume()
