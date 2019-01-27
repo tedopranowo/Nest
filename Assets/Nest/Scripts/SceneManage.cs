@@ -15,9 +15,8 @@ public class SceneManage : MonoBehaviour {
     }
     public void Nextscene(string Gameplay)
     {
-        SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene(Gameplay);
         Time.timeScale = 1f;
-        
     }
     public void Back()
     {

@@ -379,7 +379,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4215027608851118, guid: 437b402cb3af6f6498409d0140634d05, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 437b402cb3af6f6498409d0140634d05, type: 2}
@@ -498,7 +498,7 @@ Transform:
   - {fileID: 1428074811}
   - {fileID: 630390681}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &630390680
 GameObject:
@@ -1218,6 +1218,21 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 7700677}
+    - target: {fileID: 224067430661974962, guid: a5efd36390efa584cb4263705fe790ae,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114346407238096644, guid: a5efd36390efa584cb4263705fe790ae,
+        type: 2}
+      propertyPath: m_onEventTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Day2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114860900474220514, guid: a5efd36390efa584cb4263705fe790ae,
+        type: 2}
+      propertyPath: m_onEventTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Day3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5efd36390efa584cb4263705fe790ae, type: 2}
   m_IsPrefabAsset: 0
