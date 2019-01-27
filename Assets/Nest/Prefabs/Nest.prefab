@@ -245,7 +245,7 @@ MonoBehaviour:
     m_intVariable: {fileID: 11400000, guid: a3caba5b232ead0409385d6a548b2254, type: 2}
     m_intConstant: 0
     m_isConstant: 0
-  m_targetScore: 10
+  m_targetScore: 3
   m_hatchlings:
   - {fileID: 1525775882570000}
   - {fileID: 1463800418467138}
@@ -273,7 +273,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   m_onTargetScoreFulfilled:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 812d77c1a9fdd7746a588bfa6d9e1a0f, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!212 &212257791634053250
