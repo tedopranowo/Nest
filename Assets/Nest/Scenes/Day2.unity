@@ -1218,21 +1218,6 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 7700677}
-    - target: {fileID: 114059687909932448, guid: a5efd36390efa584cb4263705fe790ae,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114059687909932448, guid: a5efd36390efa584cb4263705fe790ae,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114967205503888898, guid: a5efd36390efa584cb4263705fe790ae,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Day2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5efd36390efa584cb4263705fe790ae, type: 2}
   m_IsPrefabAsset: 0
