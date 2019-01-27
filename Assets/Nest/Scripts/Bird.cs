@@ -13,6 +13,7 @@ public class Bird : MonoBehaviour {
         kInSafeZone = 2,
     }
 
+    [SerializeField] private Vector3Variable m_positionVariable;
     [SerializeField] private float m_speed;
     [SerializeField] private float m_rotationSpeed;
     [SerializeField] private UnityEvent m_onEnterDangerZone;
@@ -83,6 +84,8 @@ public class Bird : MonoBehaviour {
         HandleForwardMovement();
 
         HandleRetrievingObject();
+
+        UpdateVariables();
 	}
 
     private void HandleRotation()
@@ -144,6 +147,14 @@ public class Bird : MonoBehaviour {
                 m_carriedObject = null;
             }
         }
+    }
+
+    /// <summary>
+    /// Update variables references
+    /// </summary>
+    private void UpdateVariables()
+    {
+        m_positionVariable.value = transform.position;
     }
 
     /// <summary>
