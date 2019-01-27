@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Events;
 
 public class Nest : MonoBehaviour {
@@ -6,6 +7,7 @@ public class Nest : MonoBehaviour {
     [SerializeField] private IntVariable m_healthVariable;
     [SerializeField] private IntVariable m_score;
     [SerializeField] private IntReference m_startingHealth;
+    [SerializeField] private List<GameObject> m_hatchlings;
     [SerializeField] private UnityEvent m_onReceiveDamage;
     [SerializeField] private UnityEvent m_onDeath;
 
@@ -26,8 +28,15 @@ public class Nest : MonoBehaviour {
     public void TakeDamage(int damage)
     {
         m_healthVariable.value = m_healthVariable.value - damage;
+
+        //Kill one of the hatchling
+        Destroy(m_hatchlings[0]);
+        m_hatchlings.RemoveAt(0);
+
+        //Trigger on receive damage event
         m_onReceiveDamage.Invoke();
 
+        //Triger on Death event
         if (m_healthVariable.value <= 0)
         {
             m_onDeath.Invoke();
