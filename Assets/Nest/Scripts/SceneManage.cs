@@ -9,17 +9,17 @@ public class SceneManage : MonoBehaviour {
     public GameObject tulisan;
     public GameObject btnPlay, btnSoundOn, btnSoundOff, btnI;
     
-    public void backscene(string back)
+    public void Backscene(string back)
     {
         SceneManager.LoadScene("Menu");
     }
-    public void nextscene(string Gameplay)
+    public void Nextscene(string Gameplay)
     {
         SceneManager.LoadScene("Gameplay");
         Time.timeScale = 1f;
         
     }
-    public void back()
+    public void Back()
     {
         Credit.SetActive(false);
         tulisan.SetActive(true);

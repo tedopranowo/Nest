@@ -221,6 +221,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 2974b6142fdd23e4f9e9f36dfcb2e54b,
         type: 3}
+    - target: {fileID: 114967205503888898, guid: a5efd36390efa584cb4263705fe790ae,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Day3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5efd36390efa584cb4263705fe790ae, type: 2}
   m_IsPrefabAsset: 0
@@ -584,7 +589,7 @@ Transform:
   m_GameObject: {fileID: 431989538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 120, y: 120, z: 150}
+  m_LocalScale: {x: 140, y: 140, z: 150}
   m_Children: []
   m_Father: {fileID: 1815813862}
   m_RootOrder: 1

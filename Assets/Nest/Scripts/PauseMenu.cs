@@ -29,7 +29,7 @@ public class PauseMenu : MonoBehaviour {
 
     public void Retry(string Gameplay)
     {
-        SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene(Gameplay);
         Time.timeScale = 1f;
         GlobalManager.instance.audioSource.PlayDelayed(0.5f);
     }
