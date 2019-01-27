@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 95458057434769332}
   - component: {fileID: 114375815989795458}
   - component: {fileID: 114742192192182268}
+  - component: {fileID: 114963086735913388}
   m_Layer: 0
   m_Name: Racoon
   m_TagString: Untagged
@@ -70,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1118867930149852}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.472, y: 0, z: 0}
+  m_LocalPosition: {x: 3.32, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4573274607355396}
@@ -287,6 +288,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114963086735913388
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1118867930149852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fa078f1e8afcad40adb7d8b9a4711b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_objectSet: {fileID: 11400000, guid: 874f9712f378c4849bad7334f0c310f9, type: 2}
 --- !u!212 &212813876094179376
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -321,7 +334,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: faa4810de01346c448f1e0cc0da92539, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

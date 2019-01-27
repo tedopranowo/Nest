@@ -6,6 +6,7 @@ public class Nest : MonoBehaviour {
     [SerializeField] private Vector3Variable m_locationVariable;
     [SerializeField] private IntVariable m_healthVariable;
     [SerializeField] private IntVariable m_scoreVariable;
+    [SerializeField] private IntVariable m_targetScoreVariable;
     [SerializeField] private IntReference m_startingHealth;
     [SerializeField] private int m_targetScore;
     [SerializeField] private List<GameObject> m_hatchlings;
@@ -22,6 +23,7 @@ public class Nest : MonoBehaviour {
     {
         m_healthVariable.value = m_startingHealth;
         m_scoreVariable.value = 0;
+        m_targetScoreVariable.value = m_targetScore;
     }
 
     /// <summary>

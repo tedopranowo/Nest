@@ -238,11 +238,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_locationVariable: {fileID: 11400000, guid: 749afbc0588f80c408b9f06d1fa15db6, type: 2}
   m_healthVariable: {fileID: 11400000, guid: c9a47a819b8575b4287027b592ea71f3, type: 2}
-  m_score: {fileID: 11400000, guid: 29868c73c6b3cea40ae4248cf677e23b, type: 2}
+  m_scoreVariable: {fileID: 11400000, guid: 29868c73c6b3cea40ae4248cf677e23b, type: 2}
+  m_targetScoreVariable: {fileID: 11400000, guid: 9bec0cdf1408eb04ca67398daaf34167,
+    type: 2}
   m_startingHealth:
     m_intVariable: {fileID: 11400000, guid: a3caba5b232ead0409385d6a548b2254, type: 2}
     m_intConstant: 0
     m_isConstant: 0
+  m_targetScore: 10
   m_hatchlings:
   - {fileID: 1525775882570000}
   - {fileID: 1463800418467138}
@@ -266,6 +269,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_onTargetScoreFulfilled:
+    m_PersistentCalls:
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!212 &212257791634053250
