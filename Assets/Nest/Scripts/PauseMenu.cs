@@ -37,6 +37,7 @@ public class PauseMenu : MonoBehaviour {
     public void QuittingGame(string Menu)
     {
         SceneManager.LoadScene(Menu);
+        GlobalManager.instance.audioSource.Stop();
     }
 
 }

@@ -10,6 +10,7 @@ public class SceneManage : MonoBehaviour {
     public GameObject Tutorial;
     public GameObject btnPlay, btnSoundOn, btnSoundOff, btnI;
     
+  
     public void Backscene(string back)
     {
         SceneManager.LoadScene("Menu");
@@ -18,6 +19,7 @@ public class SceneManage : MonoBehaviour {
     {
         SceneManager.LoadScene(Gameplay);
         Time.timeScale = 1f;
+        GlobalManager.instance.audioSource.Play();
     }
     public void Back()
     {

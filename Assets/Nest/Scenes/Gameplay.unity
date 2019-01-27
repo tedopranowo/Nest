@@ -268,6 +268,14 @@ Prefab:
       propertyPath: m_onEventTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Gameplay
       objectReference: {fileID: 0}
+    - target: {fileID: 1888697299771868, guid: 64f01977ba243574887881d345f11aa7, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234507441787366, guid: 64f01977ba243574887881d345f11aa7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64f01977ba243574887881d345f11aa7, type: 2}
   m_IsPrefabAsset: 0
@@ -706,9 +714,7 @@ MonoBehaviour:
   isSoundOn: 1
   audioSource: {fileID: 1035842136}
   audioClip:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: fc191c840b607254292fef2491020655, type: 3}
 --- !u!82 &1035842136
 AudioSource:
   m_ObjectHideFlags: 0
