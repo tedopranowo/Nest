@@ -5,6 +5,18 @@ public class Racoon : MonoBehaviour
     [SerializeField] private Vector3Reference m_targetLocation;
     [SerializeField] private FloatReference m_speed;
 
+    public float speed
+    {
+        set
+        {
+            m_speed.value = value;
+        }
+        get
+        {
+            return m_speed;
+        }
+    }
+
     private void Update()
     {
         //Change fox direction towards the nest

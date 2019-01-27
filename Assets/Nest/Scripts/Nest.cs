@@ -5,11 +5,14 @@ using UnityEngine.Events;
 public class Nest : MonoBehaviour {
     [SerializeField] private Vector3Variable m_locationVariable;
     [SerializeField] private IntVariable m_healthVariable;
-    [SerializeField] private IntVariable m_score;
+    [SerializeField] private IntVariable m_scoreVariable;
+    [SerializeField] private IntVariable m_targetScoreVariable;
     [SerializeField] private IntReference m_startingHealth;
+    [SerializeField] private int m_targetScore;
     [SerializeField] private List<GameObject> m_hatchlings;
     [SerializeField] private UnityEvent m_onReceiveDamage;
     [SerializeField] private UnityEvent m_onDeath;
+    [SerializeField] private UnityEvent m_onTargetScoreFulfilled;
 
     private void Awake()
     {
@@ -19,7 +22,8 @@ public class Nest : MonoBehaviour {
     private void Start()
     {
         m_healthVariable.value = m_startingHealth;
-        m_score.value = 0;
+        m_scoreVariable.value = 0;
+        m_targetScoreVariable.value = m_targetScore;
     }
 
     /// <summary>
@@ -48,6 +52,9 @@ public class Nest : MonoBehaviour {
     /// </summary>
     public void AddScore(int score)
     {
-        m_score.value += score;
+        m_scoreVariable.value += score;
+
+        if (m_scoreVariable.value >= m_targetScore)
+            m_onTargetScoreFulfilled.Invoke();
     }
 }

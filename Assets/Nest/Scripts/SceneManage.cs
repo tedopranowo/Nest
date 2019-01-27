@@ -17,12 +17,16 @@ public class SceneManage : MonoBehaviour {
     }
     public void Nextscene(string Gameplay)
     {
+        GlobalManager.instance.audioSource.PlayOneShot(GlobalManager.instance.soundClick); //SFX
+
         SceneManager.LoadScene(Gameplay);
         Time.timeScale = 1f;
         GlobalManager.instance.audioSource.Play();
     }
     public void Back()
     {
+        GlobalManager.instance.audioSource.PlayOneShot(GlobalManager.instance.soundClick); //SFX
+
         Credit.SetActive(false);
         tulisan.SetActive(true);
         title.SetActive(true);
@@ -46,7 +50,8 @@ public class SceneManage : MonoBehaviour {
    
     public void OnCredit()
     {
-        
+        GlobalManager.instance.audioSource.PlayOneShot(GlobalManager.instance.soundClick); //SFX
+
         Credit.SetActive(true);
         tulisan.SetActive(false);
         title.SetActive(false);
@@ -54,15 +59,18 @@ public class SceneManage : MonoBehaviour {
         btnSoundOn.SetActive(false);
         btnSoundOff.SetActive(false);
         btnI.SetActive(false);
-        GlobalManager.instance.audioSource.volume = 1;
+        //GlobalManager.instance.audioSource.volume = 1;
     }
 
     public void Resume()
     {
+
         tulisan.SetActive(true);
     }
     public void SoundOn()
     {
+        GlobalManager.instance.audioSource.PlayOneShot(GlobalManager.instance.soundClick); //SFX
+
         Debug.Log("SoundOn!");
         btnSoundOn.SetActive(true);
         btnSoundOff.SetActive(false);
@@ -70,6 +78,8 @@ public class SceneManage : MonoBehaviour {
     }
     public void SoundOff()
     {
+        GlobalManager.instance.audioSource.PlayOneShot(GlobalManager.instance.soundClick); //SFX
+
         Debug.Log("SoundOff!");
         btnSoundOn.SetActive(false);
         btnSoundOff.SetActive(true);
@@ -77,6 +87,8 @@ public class SceneManage : MonoBehaviour {
     }
     public void Quit()
     {
+        GlobalManager.instance.audioSource.PlayOneShot(GlobalManager.instance.soundClick); //SFX
+
         Debug.Log("Active");
         Application.Quit();
     }

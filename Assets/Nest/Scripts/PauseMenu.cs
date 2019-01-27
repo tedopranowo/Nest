@@ -14,10 +14,15 @@ public class PauseMenu : MonoBehaviour {
         PausedMenu.SetActive(true);
         if (PausedMenu == true)
         {
-            Time.timeScale = 0f;
-            GlobalManager.instance.audioSource.volume = 0.25f;
-            IsPaused = true;
+            Pause();
         }
+    }
+
+    public void Pause()
+    {
+        Time.timeScale = 0f;
+        GlobalManager.instance.audioSource.volume = 0.25f;
+        IsPaused = true;
     }
 
     public void Resume()

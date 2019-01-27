@@ -6,7 +6,9 @@ public class GlobalManager : MonoBehaviour {
     public static GlobalManager instance = null;
     public bool isSoundOn=true;
     public AudioSource audioSource;
-    public AudioClip[]  audioClip;
+    public AudioClip bgm;
+
+    public AudioClip soundClick;
     public static int i;
     // Use this for initialization
     void Awake () {
@@ -18,12 +20,12 @@ public class GlobalManager : MonoBehaviour {
     }
     void Start()
     {
-        audioSource.clip = audioClip[i];
-        audioSource.Play();
+        audioSource.clip = bgm;
+        audioSource.Play(); //BGM
     }
 
     // Update is called once per frame
-        void Update () {
+    void Update () {
 		
 	}
 }

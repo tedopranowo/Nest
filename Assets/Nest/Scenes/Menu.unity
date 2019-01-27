@@ -1404,8 +1404,8 @@ MonoBehaviour:
           m_StringArgument: Gameplay
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1994483070}
-        m_MethodName: 
+      - m_Target: {fileID: 1994483073}
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1827,14 +1827,30 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1994483072}
+  - component: {fileID: 1994483071}
   - component: {fileID: 1994483073}
   m_Layer: 0
-  m_Name: Click
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1994483071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1994483070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a00b4b727a60604bb03d151d03fced8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSoundOn: 1
+  audioSource: {fileID: 1994483073}
+  bgm: {fileID: 8300000, guid: fc191c840b607254292fef2491020655, type: 3}
+  soundClick: {fileID: 8300000, guid: 4a69a5f57c3483d4282592a863078d90, type: 3}
 --- !u!4 &1994483072
 Transform:
   m_ObjectHideFlags: 0
